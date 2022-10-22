@@ -8,7 +8,7 @@
     "dev:node": "cross-env NODE_ENV=development nodemon ./server.js --watch ./server.js",
     "dev:remix": "remix watch",
     "dev:css": "tailwindcss -w -i ./styles/tailwind.css -o app/styles/tailwind.css",
-    "start": "npm run build && cross-env NODE_ENV=production node ./server.js"
+    "start": "cross-env NODE_ENV=production node ./server.js"
   },
   "dependencies": {
     "@remix-run/express": "^1.7.3",
