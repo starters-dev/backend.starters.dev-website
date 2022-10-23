@@ -63,4 +63,6 @@ COPY --from=build /myapp/server.js /myapp/server.js
 
 # ENTRYPOINT [ "./start.sh" ]
 
+EXPOSE 8080
+
 CMD ["npm", "run" ,"start"]
